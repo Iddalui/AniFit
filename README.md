@@ -8,4 +8,4 @@ Personalized dietary plans
 Personalized fitness goal
 Workout routines
 
-This repository is made in partial completion oft he LBYCPD2 of De La Salle University's Computer Engineering Program.
+This repository is made in partial completion of the LBYCPD2 course of De La Salle University's Computer Engineering Program.
