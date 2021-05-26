@@ -9,6 +9,7 @@ const HomeScreen = ({navigation}) => {
                 title= "Click Here"
                 onPress={()=> alert('Button Clicked')}
                 />
+            
                 </View>
     )
 };
