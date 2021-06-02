@@ -10,6 +10,7 @@ import {
     StackedBarChart
   } from "react-native-chart-kit";
   var cars = ["Saab", "Volvo", "BMW"];
+  
 const HomeScreen = ({navigation}) => {
     return(
         <React.Fragment>
@@ -58,6 +59,7 @@ const HomeScreen = ({navigation}) => {
       borderRadius: 10
     }}
   />
+  
                 </View>
 
         

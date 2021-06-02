@@ -1,10 +1,11 @@
-import React, {useState} from 'react';
+import React, {useState,Component} from 'react';
 
 import {View, Text, Button, StyleSheet, TextInput} from 'react-native';
 import SearchingDropDown from '../screens/SearchDropDown';
+import PostCalculator from '../screens/Calcu';
 
 
-const PostScreen = ({navigation}) => {
+const PostScreen  = ({navigation}) => {
     const [dataSource] = useState(['apple', 'banana', 'mango', 'egg', 'yogurt', 'orange', 'soda', 'cereal'])
   const [colors] = useState(['#84DCC6', '#FEC8C8', '#F7E4CF', "#E8DEF3",
   ])
@@ -30,7 +31,13 @@ const PostScreen = ({navigation}) => {
   const randomColor = () => {
     return colors[Math.floor(Math.random() * colors.length)]
   }
+  const pressHandler=()=>{
+    navigation.navigate('Calcu');
+  }
+ 
+  
   return (
+    
     <View style={styles.container}>
 
     <TextInput
@@ -64,7 +71,7 @@ const PostScreen = ({navigation}) => {
           })
         }
       </View>
-
+      
     </View>
 
     
@@ -74,9 +81,14 @@ const PostScreen = ({navigation}) => {
         onPress={() => setSearching(false)}
         dataSource={filtered} />
     }
+
+<Button title="Total" onPress={()=>navigation.navigate(pressHandler)}/>
+     
   </View>
-)
-}
+);
+  }
+
+
 export default PostScreen;
 
 const styles = StyleSheet.create({
@@ -91,7 +103,7 @@ const styles = StyleSheet.create({
     input:{
         borderWidth:1,
         borderColor:'#000000',
-        padding:8,
+        padding:10,
         margin:10,
         width:350,
 

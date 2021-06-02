@@ -1,16 +1,21 @@
-import React, {useState} from 'react';
-import {View, Text, Button, StyleSheet, TextInput, Alert} from 'react-native';
-import FlatButton from '../screens/button';
+import React, {useState,Component} from 'react';
+import {View, Text, Button, StyleSheet, TextInput, Alert,FlatList,TouchableOpacity, RecyclerViewBackedScrollView} from 'react-native';
+import {createAppContianer} from 'react-navigation';
+import{createStackNavigator} from 'react-navigation-stack';
+import InformationSheet from '../screens/InfoSheet';
 
 
-const FindScreen = ({navigation}) => {
+
+const FindScreen   = ({navigation})  => {
     const[name, setName]= useState('');
     const[age, setAge]= useState('');
     const[weight, setWeight]= useState('');
     const[calorie, setCalories]= useState('');
+   
     return(
         
         <View style = {styles.container}>
+           
             <Text>Name</Text>
             <TextInput 
             style={styles.input}
@@ -37,15 +42,21 @@ const FindScreen = ({navigation}) => {
             
             <Button
           title="Confirm" style={styles.button}
-          onPress={() => Alert.alert('Submission Confirmed')}
+          onPress={() => navigation.navigate('InfoSheet')}
         />
             <Text>name: {name},age:{age},weight: {weight},calorie: {calorie}</Text>
+            
+            
                 </View>
+
+                
     
     )
 };
 
 export default FindScreen;
+
+
 
 const styles = StyleSheet.create({
     container:{
