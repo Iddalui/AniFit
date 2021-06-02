@@ -2,7 +2,7 @@ import React, {useState,Component} from 'react';
 
 import {View, Text, Button, StyleSheet, TextInput} from 'react-native';
 import SearchingDropDown from '../screens/SearchDropDown';
-import PostCalculator from '../screens/Calcu';
+import PostCalculator from '../screens/CalculatorScreen';
 
 
 const PostScreen  = ({navigation}) => {

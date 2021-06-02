@@ -1,6 +1,7 @@
 import React, {useState,Component} from 'react';
-
 import {View, Text, Button, StyleSheet, TextInput} from 'react-native';
+
+
 
 export default class PostCalculator extends Component{
     constructor(props)
@@ -19,7 +20,7 @@ export default class PostCalculator extends Component{
     
     render(){
         return(
-            <NavigationContainer>
+    
             <View>
             <TextInput 
             style={styles.input}
@@ -31,7 +32,6 @@ export default class PostCalculator extends Component{
             onChangeText={(val)=> setName(val)}/>
             <Button title="Total" onPress={this.Sum}/>
             </View>
-            </NavigationContainer>
             
         );
     }

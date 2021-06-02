@@ -2,7 +2,7 @@ import React, {useState,Component} from 'react';
 import {View, Text, Button, StyleSheet, TextInput, Alert,FlatList,TouchableOpacity, RecyclerViewBackedScrollView} from 'react-native';
 import {createAppContianer} from 'react-navigation';
 import{createStackNavigator} from 'react-navigation-stack';
-import InformationSheet from '../screens/InfoSheet';
+import InformationSheet from './InfoScreen';
 
 
 

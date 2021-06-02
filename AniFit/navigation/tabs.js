@@ -7,6 +7,8 @@ import DetailsScreen from '../screens/DetailsScreen.js';
 import SleepScreen from '../screens/SleepScreen.js';
 import PostScreen from '../screens/PostScreen.js';
 import FitnessScreen from '../screens/FitnessScreen.js';
+import CalculatorScreen from '../screens/CalculatorScreen.js';
+import InfoScreen from '../screens/InfoScreen.js';
 
 const Tab = createBottomTabNavigator();
 
@@ -53,8 +55,8 @@ const Tabs = () => {
   options={{
   tabBarIcon: ({focused}) => (
 <View style={{alignItems:'center',justifyContent:'center', top:10}}>
-<Image source={require('../assets/home.png')} resizeMode="contain" style={{ width: 25, height: 25,tintColor: focused ? '#e32f45' : '#748c94'}} />
-  <Text style = {{color: focused ? '#e32f45' : '#748c94', fontSize: 12}}>
+<Image source={require('../assets/home.png')} resizeMode="contain" style={{ width: 20, height: 20,tintColor: focused ? '#e32f45' : '#748c94'}} />
+  <Text style = {{color: focused ? '#e32f45' : '#748c94', fontSize: 10}}>
     HOME
     </Text>
 </View>
@@ -64,12 +66,25 @@ const Tabs = () => {
   options={{
   tabBarIcon: ({focused}) => (
 <View style={{alignItems:'center',justifyContent:'center', top:10}}>
-<Image source={require('../assets/details.png')} resizeMode="contain" style={{ width: 25, height: 25,tintColor: focused ? '#e32f45' : '#748c94'}} />
-  <Text style = {{color: focused ? '#e32f45' : '#748c94', fontSize: 12}}>
+<Image source={require('../assets/details.png')} resizeMode="contain" style={{ width: 20, height: 20,tintColor: focused ? '#e32f45' : '#748c94'}} />
+  <Text style = {{color: focused ? '#e32f45' : '#748c94', fontSize: 10}}>
     DETAILS
     </Text>
 </View>
   )}}/>
+
+
+<Tab.Screen name="Calculator" component={CalculatorScreen} 
+  options={{
+  tabBarIcon: ({focused}) => (
+<View style={{alignItems:'center',justifyContent:'center', top:10}}>
+<Image source={require('../assets/calculator.png')} resizeMode="contain" style={{ width: 20, height: 20,tintColor: focused ? '#e32f45' : '#748c94'}} />
+  <Text style = {{color: focused ? '#e32f45' : '#748c94', fontSize: 10}}>
+    CALCULATOR
+    </Text>
+</View>
+  )}}/>
+
   <Tab.Screen name="Post" component={PostScreen}
   options= {{
     tabBarIcon: ({focused}) => (
@@ -89,16 +104,25 @@ const Tabs = () => {
   }}
 />
 
-
+<Tab.Screen name="Info" component={InfoScreen} 
+  options={{
+  tabBarIcon: ({focused}) => (
+<View style={{alignItems:'center',justifyContent:'center', top:10}}>
+<Image source={require('../assets/info.png')} resizeMode="contain" style={{ width: 20, height: 20,tintColor: focused ? '#e32f45' : '#748c94'}} />
+  <Text style = {{color: focused ? '#e32f45' : '#748c94', fontSize: 10}}>
+    INFO
+    </Text>
+</View>
+  )}}/>
 
 
   <Tab.Screen name="Sleep" component={SleepScreen} 
   options={{
   tabBarIcon: ({focused}) => (
 <View style={{alignItems:'center',justifyContent:'center', top:10}}>
-<Image source={require('../assets/sleep.png')} resizeMode="contain" style={{ width: 25, height: 25,tintColor: focused ? '#e32f45' : '#748c94'}} />
-  <Text style = {{color: focused ? '#e32f45' : '#748c94', fontSize: 12}}>
-    SLEEP
+<Image source={require('../assets/sleep.png')} resizeMode="contain" style={{ width: 20, height: 20,tintColor: focused ? '#e32f45' : '#748c94'}} />
+  <Text style = {{color: focused ? '#e32f45' : '#748c94', fontSize: 10}}>
+    TIMER
     </Text>
 </View>
   )}}/>
@@ -106,8 +130,8 @@ const Tabs = () => {
   options={{
   tabBarIcon: ({focused}) => (
 <View style={{alignItems:'center',justifyContent:'center', top:10}}>
-<Image source={require('../assets/fitness.png')} resizeMode="contain" style={{ width: 25, height: 25,tintColor: focused ? '#e32f45' : '#748c94'}} />
-  <Text style = {{color: focused ? '#e32f45' : '#748c94', fontSize: 12}}>
+<Image source={require('../assets/fitness.png')} resizeMode="contain" style={{ width: 20, height: 20,tintColor: focused ? '#e32f45' : '#748c94'}} />
+  <Text style = {{color: focused ? '#e32f45' : '#748c94', fontSize: 10}}>
     FITNESS
     </Text>
 </View>
