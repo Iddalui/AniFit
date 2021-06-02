@@ -6,7 +6,7 @@ import PostCalculator from '../screens/CalculatorScreen';
 
 
 const PostScreen  = ({navigation}) => {
-    const [dataSource] = useState(['apple', 'banana', 'mango', 'egg', 'yogurt', 'orange', 'soda', 'cereal'])
+    const [dataSource] = useState(['apple 52cal', 'banana', 'mango', 'egg', 'yogurt', 'orange', 'soda', 'cereal'])
   const [colors] = useState(['#84DCC6', '#FEC8C8', '#F7E4CF', "#E8DEF3",
   ])
   const [filtered, setFiltered] = useState(dataSource)
