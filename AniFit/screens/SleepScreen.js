@@ -1,4 +1,6 @@
 import * as React from 'react';
+import AlertExample from './alertScreen.js'
+
 import {
   Vibration,
   StatusBar,
@@ -10,8 +12,8 @@ import {
   TouchableOpacity,
   Text,
   View,
-  StyleSheet
-
+  StyleSheet,
+  Alert
 }
   from 'react-native';
 
@@ -47,6 +49,7 @@ export default function App() {
   })
   const animations = React.useCallback(() =>{
     animateTextInput.setValue(duration);
+   
     Animated.sequence([
       Animated.timing(animateButton,{
         toValue:1,
@@ -61,21 +64,27 @@ export default function App() {
      Animated.parallel([
       Animated.timing(animateTextInput,{
         toValue:0,
-        duration:duration * 60000,
+        duration:duration * 1000,
         useNativeDriver:true
       }), 
       Animated.timing(timerAnimation,{
         toValue:height,
-        duration:duration * 60000,
+        duration:duration * 1000,
         useNativeDriver:true
       })
+      
      ])
     ]).start(()=>{
-
+      Alert.alert(
+        "Anifit",
+        "Timer is done!",
+      );
       Animated.timing(animateButton,{
         toValue:0,
         duration:300,
-        useNativeDriver:true
+        useNativeDriver:true,
+        
+       
       }).start()
     })
   },[duration])
@@ -208,6 +217,7 @@ export default function App() {
           }}
         />
       </View>
+
     </View>
   )
 }

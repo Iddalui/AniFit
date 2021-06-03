@@ -45,9 +45,7 @@ const FindScreen   = ({navigation})  => {
           onPress={() => navigation.navigate('InfoSheet')}
         />
             <Text>name: {name},age:{age},weight: {weight},calorie: {calorie}</Text>
-            
-            
-                </View>
+         </View>
 
                 
     
