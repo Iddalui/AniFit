@@ -18,8 +18,9 @@ const HomeScreen = ({navigation}) => {
         <View style = {styles.container}>
                 <Text> Welcome to AniFit</Text>
 
-
-                <Text style>Your Current Calories Chart:</Text>
+                <View style={styles.ContainerText}>
+                <Text style={styles.boldText}>  Your Current Calories Chart:</Text>
+                </View>
   <LineChart
     data={{
       labels: ["Day 1", "Day 2", "Day 3", "Day 4", " Day 5", "Day 6"],
@@ -64,41 +65,44 @@ const HomeScreen = ({navigation}) => {
     }}
   />
 
-  <Text style={styles.boldText  }>TABLE OF CONTENT</Text>
+<Text>{"\n"}</Text>
+<View style={styles.ContainerText}>
+  <Text style={styles.boldText}>                    TABLE OF CONTENT                </Text>
+  </View>   
 
-  <Text>{"\n"}{"\n"}{"\n"}</Text>
   <View style={styles.ContainerText}>
    <Text style={styles.boldText}>Details</Text>
    <Text style={styles.ListText}>Input Information for tracking</Text>
-   </View>
+
    <Text>{"\n"}</Text>
 
    
-   <View style={styles.ContainerText}>
+
    <Text style={styles.boldText}>Calculator</Text>
-   <Text style={styles.ListText}>Calculate total Calorie count</Text>
-   </View>
+   <Text style={styles.ListText}>Calculate total calorie intake</Text>
+
    <Text>{"\n"}</Text>
 
    
-   <View style={styles.ContainerText}>
+
    <Text style={styles.boldText}>Info</Text>
-   <Text style={styles.ListText}>Display inputted information</Text>
-   </View>
+   <Text style={styles.ListText}>Display inputted information in the details</Text>
+
    <Text>{"\n"}</Text>
    
-   <View style={styles.ContainerText}>
+
     <Text style={styles.boldText}>Timer</Text>
    <Text style={styles.ListText}>Personal minute timer</Text>
-   </View> 
+
    
    <Text>{"\n"}</Text>
-    <View style={styles.ContainerText}>
+
    <Text style={styles.boldText}>Fitness</Text>
    <Text style={styles.ListText}>Recommendations for fitness</Text>
       </View> 
-      <Text>{"\n"}</Text>
-                </View>
+    
+      <Text>{"\n"}{"\n"}{"\n"}{"\n"}{"\n"}{"\n"}{"\n"}</Text>
+          </View>   
                 </ScrollView>
        
     )
@@ -130,8 +134,8 @@ const styles = StyleSheet.create({
       paddingBottom:20,
       paddingLeft:50,
       paddingRight:50,
-      borderRadius:10,
-      borderWidth: 1,
+      //borderRadius:10,
+      //borderWidth: 1,
       backgroundColor:'#68a0cf',
     }
 })
