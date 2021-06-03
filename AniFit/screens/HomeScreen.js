@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, Button, StyleSheet} from 'react-native';
+import {View, Text, ScrollView, StyleSheet} from 'react-native';
 import { Dimensions } from "react-native";
 import {
     LineChart,
@@ -13,9 +13,13 @@ import {
   
 const HomeScreen = ({navigation}) => {
     return(
-        <React.Fragment>
+  <ScrollView>
+      
         <View style = {styles.container}>
-                <Text style>Calories Chart</Text>
+                <Text> Welcome to AniFit</Text>
+
+
+                <Text style>Your Current Calories Chart:</Text>
   <LineChart
     data={{
       labels: ["Day 1", "Day 2", "Day 3", "Day 4", " Day 5", "Day 6"],
@@ -59,11 +63,44 @@ const HomeScreen = ({navigation}) => {
       borderRadius: 10
     }}
   />
-  
-                </View>
 
-        
-        </React.Fragment>       
+  <Text style={styles.boldText  }>TABLE OF CONTENT</Text>
+
+  <Text>{"\n"}{"\n"}{"\n"}</Text>
+  <View style={styles.ContainerText}>
+   <Text style={styles.boldText}>Details</Text>
+   <Text style={styles.ListText}>Input Information for tracking</Text>
+   </View>
+   <Text>{"\n"}</Text>
+
+   
+   <View style={styles.ContainerText}>
+   <Text style={styles.boldText}>Calculator</Text>
+   <Text style={styles.ListText}>Calculate total Calorie count</Text>
+   </View>
+   <Text>{"\n"}</Text>
+
+   
+   <View style={styles.ContainerText}>
+   <Text style={styles.boldText}>Info</Text>
+   <Text style={styles.ListText}>Display inputted information</Text>
+   </View>
+   <Text>{"\n"}</Text>
+   
+   <View style={styles.ContainerText}>
+    <Text style={styles.boldText}>Timer</Text>
+   <Text style={styles.ListText}>Personal minute timer</Text>
+   </View> 
+   
+   <Text>{"\n"}</Text>
+    <View style={styles.ContainerText}>
+   <Text style={styles.boldText}>Fitness</Text>
+   <Text style={styles.ListText}>Recommendations for fitness</Text>
+      </View> 
+      <Text>{"\n"}</Text>
+                </View>
+                </ScrollView>
+       
     )
 };
 
@@ -74,6 +111,28 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#8fcbbc'
+        backgroundColor: '#8fcbbc',
+
+    },
+    ListText:{
+ 
+    },
+    
+    boldText:{
+      alignItems: 'center',
+      justifyContent: 'center',
+      fontWeight: 'bold',
+      backgroundColor:'#ffa726',
+    }
+,
+    ContainerText:{
+      paddingTop:20,
+      paddingBottom:20,
+      paddingLeft:50,
+      paddingRight:50,
+      borderRadius:10,
+      borderWidth: 1,
+      backgroundColor:'#68a0cf',
     }
 })
+

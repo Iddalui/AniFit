@@ -80,7 +80,7 @@ const Tabs = () => {
 <View style={{alignItems:'center',justifyContent:'center', top:10}}>
 <Image source={require('../assets/calculator.png')} resizeMode="contain" style={{ width: 20, height: 20,tintColor: focused ? '#e32f45' : '#748c94'}} />
   <Text style = {{color: focused ? '#e32f45' : '#748c94', fontSize: 10}}>
-    CALCULATOR
+    CALC
     </Text>
 </View>
   )}}/>
