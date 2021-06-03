@@ -9,7 +9,9 @@ import FindScreen from './DetailsScreen';
 const InformationSheet=({navigation})=> {
 
 return(
+    <View style = {styles.container}>
 <Text>Name: {name},Age:{age},Weight: {weight},Calorie: {calorie}</Text>
+</View>
 )
 
 };
