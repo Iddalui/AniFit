@@ -30,8 +30,32 @@ Having some dairy or dairy alternatives (such as soya drinks and yoghurts). Have
 Eating some beans, pulses, fish, eggs, meat and other protein. Aim for 2 portions of fish every week – 1 of which should be oily, such as salmon or mackerel.
 Choosing unsaturated oils and spreads, such as sunflower or rapeseed, and eating them in small amounts.
 Drinking plenty of fluids. The government recommends 6 to 8 glasses a day. But try not to have drinks just before meals to avoid feeling too full to eat.</Text>
-<Text style = {styles.head}>Overweight</Text>
+<Text style = {styles.head}>Overweight/Obesity</Text>
 <Text style={styles.body}>If overweight a person must reduce the calories taken a day below their maintenance</Text>
+<Text style={styles.header}>1.Walking</Text>
+<Text style={styles.body}>It should come as no surprise that walking is one of the best exercises to focus on if you're looking to improve your fitness and lose weight. While the benefits of walking vary depending on sex and weight, walking 1 mile can burn approximately 100 calories.</Text>
+<Text style={styles.header}>2.Modified push-ups</Text>
+<Text style={styles.body}>Modified push-ups can be done in many variations in order to build up the strength to do ordinary push-ups.An example is wall push-ups wherein you stand against a wall and push against it like an ordinary push-up.Next variation which is similar to the normal push-up but instead of putting your whole lower body down only your knees touch the floor while you perform the normal motion of a push-up.If mastered you can move on to the normal variation of the push-up and eventually move on to other variations.</Text>
+<Text style={styles.header}>3.Side Leg Lifts</Text>
+<Text style={styles.body}>Leg lifts are a great exercise for working out your lower body, and there are several types of leg lifts you can try. Side leg lifts, or side-lying hip abduction exercises, are one of the best types you may want to give a shot.
+
+Side leg lifts can be extremely beneficial for your lower body and will be helpful for having a well-rounded exercise session. They have been shown to reduce pain and increase muscle performance. One 2011 study, for example, showed that a hip abductor strengthening program significantly reduced pain and increased strength in patients with patellofemoral pain syndrome (PFPS).
+
+To do these leg lifts you'll need to lay on your side, placing the hand from your elevated side onto the floor and your other behind your head. Lift your top leg up as high as it will go and then gently bring it back down. Then repeat the exercise for the opposite side of the body.</Text>
+<Text style={styles.header}>4.Modified Squats</Text>
+<Text style={styles.body}>Performing squats is one of the best ways to improve personal fitness. Squats are especially beneficial for your leg muscles, but really improve every part of your body if done right. They're also functional, meaning they'll help you get better with everyday movements as well.
+
+Squats are also one of the best exercises for burning calories. According to this formula, a person who weighs 160 pounds and performs squats for 15 minutes will burn around 230 calories.
+
+When performing a basic squat, you'll start standing up. Then, you'll lower your body to the ground. Then you'll slowly rise back up. Some people perform squats while holding a weight in their hands, and there are plenty of variations you can try.
+
+If it's difficult for you to perform a full squat, you can modify it to make it easier for you. To perform a modified squat, do a squat normally. However, instead of lowering your body all the way to the ground, lower it into a chair instead, before rising back up.</Text>
+<Text styles={styles.header}>5.Stationary Bike(15-20minutes)</Text>
+<Text styles={styles.body}>In addition to walking, riding a stationary bike is a great exercise you can use to improve your body and get your heart rate up. Stationary bikes can come with backrests, providing additional support and a more comfortable experience.
+
+Riding a stationary bike helps strengthening your heart and lungs while also improving your body's ability to use oxygen. It's also a great way to give your lower body a workout and to burn some calories. One study found that a person weighing 185 pounds will burn 311 calories during 30 minutes of moderate riding, and will burn 466 calories during vigorous riding.
+
+While you'll want to do some of the other exercises listed here as well, this is one effective cardio exercise you should consider adding into your routine. </Text>
 <Text>{"\n"}{"\n"}{"\n"}{"\n"}{"\n"}{"\n"}{"\n"}</Text>
                 <Text>{"\n"}{"\n"}{"\n"}{"\n"}{"\n"}{"\n"}{"\n"}</Text>
                 <Text>{"\n"}{"\n"}{"\n"}{"\n"}{"\n"}{"\n"}{"\n"}</Text>
