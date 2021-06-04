@@ -2,7 +2,7 @@ import React, {useState,Component} from 'react';
 import {View, Text, Button, StyleSheet, TextInput, Alert,FlatList,TouchableOpacity, RecyclerViewBackedScrollView} from 'react-native';
 import {createAppContianer} from 'react-navigation';
 import{createStackNavigator} from 'react-navigation-stack';
-import InformationSheet from './InfoScreen';
+import InformationSheet from '../screens/InfoScreen';
 
 
 
@@ -21,7 +21,7 @@ const FindScreen   = ({navigation})  => {
             style={styles.input}
             placeholder='Fullname'
             onChangeText={(val)=> setName(val)}/>
-            <Text>Birthday</Text>
+            <Text>Age</Text>
             <TextInput 
             keyboardType='numeric'
             style={styles.input}
