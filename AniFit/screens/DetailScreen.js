@@ -2,11 +2,9 @@ import React, {useState,Component} from 'react';
 import {View, Text, Button, StyleSheet, TextInput, Alert,FlatList,TouchableOpacity, RecyclerViewBackedScrollView} from 'react-native';
 import {createAppContianer} from 'react-navigation';
 import{createStackNavigator} from 'react-navigation-stack';
-import InformationSheet from '../screens/InfoScreen';
 
 
-
-const FindScreen   = ({navigation})  => {
+const DetailScreen = ({navigation})  => {
     const[name, setName]= useState('');
     const[age, setAge]= useState('');
     const[weight, setWeight]= useState('');
@@ -52,7 +50,7 @@ const FindScreen   = ({navigation})  => {
     )
 };
 
-export default FindScreen;
+export default DetailScreen;
 
 
 

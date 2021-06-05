@@ -3,7 +3,7 @@ import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import HomeScreen from '../screens/HomeScreen.js';
-import DetailsScreen from '../screens/DetailsScreen.js';
+import DetailScreen from '../screens/DetailScreen.js';
 import SleepScreen from '../screens/SleepScreen.js';
 import PostScreen from '../screens/PostScreen.js';
 import FitnessScreen from '../screens/FitnessScreen.js';
@@ -62,7 +62,7 @@ const Tabs = () => {
 </View>
   )}}/>
   
-  <Tab.Screen name="Details" component={DetailsScreen} 
+  <Tab.Screen name="Details" component={DetailScreen} 
   options={{
   tabBarIcon: ({focused}) => (
 <View style={{alignItems:'center',justifyContent:'center', top:10}}>
@@ -80,7 +80,7 @@ const Tabs = () => {
 <View style={{alignItems:'center',justifyContent:'center', top:10}}>
 <Image source={require('../assets/calculator.png')} resizeMode="contain" style={{ width: 20, height: 20,tintColor: focused ? '#e32f45' : '#748c94'}} />
   <Text style = {{color: focused ? '#e32f45' : '#748c94', fontSize: 10}}>
-    CALC
+    BMI
     </Text>
 </View>
   )}}/>

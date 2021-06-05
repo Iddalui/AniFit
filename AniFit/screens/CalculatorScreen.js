@@ -13,7 +13,6 @@ export default class PostCalculator extends Component{
     {
       var N1=parseInt(this.state.Num1);
       var N2=parseInt(this.state.Num2);
-  
       var R=(N1/N2/N2)*703;
       alert(R);
     }
